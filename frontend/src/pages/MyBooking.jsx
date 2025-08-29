@@ -13,7 +13,6 @@ const MyBooking = () => {
   const dispatch = useDispatch();
   const { loggedUser } = useSelector((state) => state.user);
 
-  // console.log("My Booking:", loggedUser);
 
   if (!loggedUser) {
     return (

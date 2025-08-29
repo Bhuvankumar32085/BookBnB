@@ -81,7 +81,6 @@ const ViewCard = () => {
 
   const isAdmin = loggedUser?._id === clickedCard?.host;
 
-  // console.log("Clicked Card:", isAdmin);
 
   if (!clickedCard) {
     return (
@@ -113,7 +112,6 @@ const ViewCard = () => {
       if (e.target.image3.files[0])
         data.append("image3", e.target.image3.files[0]);
 
-      // console.log(data)
 
       const res = await instance.put(
         `/listing/update/${clickedCard._id}`,

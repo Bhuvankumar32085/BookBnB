@@ -43,7 +43,6 @@ const Home = () => {
   const { listings } = useSelector((state) => state.listing);
   const { loggedUser } = useSelector((state) => state.user);
  
-  // console.log(listings);
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-gray-50 to-white px-6 md:px-12 lg:px-20 py-10">

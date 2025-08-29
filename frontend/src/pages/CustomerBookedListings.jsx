@@ -15,7 +15,6 @@ const CustomerBookedListings = () => {
   const { loggedUser } = useSelector((state) => state.user);
   const customerBookings = loggedUser?.listing.filter((item) => item.isBooked);
 
-  console.log("Customer Booked Listings:", customerBookings);
 
   if (!loggedUser) {
     return (

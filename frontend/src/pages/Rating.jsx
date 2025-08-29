@@ -14,7 +14,6 @@ const Rating = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async () => {
-    console.log("Submit Rating:", rating);
     setLoading(true);
     try {
       const res = await instance.post(`/listing/${clickedCard._id}/rate`, {

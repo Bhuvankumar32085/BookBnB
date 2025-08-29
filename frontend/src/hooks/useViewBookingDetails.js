@@ -4,7 +4,6 @@ import instance from "../utils/axios";
 import { setBookingDetails } from "../redux/slices/listingSlice";
 
 export const useViewBookingDetails = (isLogging,id,isBooked) => {
-    // console.log('isBooked:', isBooked);
   const dispatch = useDispatch();
 
   useEffect(() => {
